@@ -65,7 +65,7 @@ This assignment is broken down into the following tasks:
     - Tumor Volume (mm3)  
 ```  
 ### Summary Breakdowns:  
-- [Loading Station & Data Cleanup](main.ipynb/#loading-station--data-cleanup)  
+- [Loading Station & Data Cleanup](/Pymaeuticals/main.ipynb/#loading-station--data-cleanup)  
 - [Summary Statistics]()  
 - [Bar and Pie Charts]()  
 - [Quartiles, Outliers and Boxplots]()  
