@@ -66,11 +66,11 @@ This assignment is broken down into the following tasks:
 ```  
 ### Summary Breakdowns:  
 - [Loading Station & Data Cleanup](Pymaceuticals/main.ipynb#loading-station-and-data-cleanup)  
-- [Summary Statistics]()  
-- [Bar and Pie Charts]()  
-- [Quartiles, Outliers and Boxplots]()  
-- [Line and Scatter Plots]()  
-- [Correlation and Regression]()  
+- [Summary Statistics](Pymaceuticals/main.ipynb#summary-statistics)  
+- [Bar and Pie Charts](Pymaceuticals/main.ipynb#bar-and-pie-charts)  
+- [Quartiles, Outliers and Boxplots](Pymaceuticals/main.ipynb#quartiles--outliers-and-boxplots)  
+- [Line and Scatter Plots](Pymaceuticals/main.ipynb#line-and-scatter-plots)  
+- [Correlation and Regression](Pymaceuticals/main.ipynb#correlation-and-regression)  
 
 ## Setup and Usage  
 ### Prerequisites  
