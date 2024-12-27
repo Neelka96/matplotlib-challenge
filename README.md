@@ -126,7 +126,16 @@ This assignment is broken down into the following tasks:
 
 
 ## Files and Directory Structure  
-
+```  
+matplotlib-challenge/
+|
+|— Pymaceuticals/
+|   |— data/
+|   |   — Mouse_metadata.csv
+|   |   - Study_results.csv
+|   |— main.ipynb
+```  
+This structure ensures all inputs are organized within their respective folders.  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
