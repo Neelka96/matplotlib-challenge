@@ -7,6 +7,9 @@
 ## Table of Contents  
 1. [Introduction](#introduction)  
 2. [Challenge Overview](#challenge-overview)  
+3. [Variables/Breakdowns](#variablesbreakdowns)
+    - [Relevant Variables](#relevant-variables)
+    - [Summary Breakdowns](#summary-breakdowns)
 3. [Setup and Usage](#setup-and-usage)  
     - [Prerequisites](#prerequisites)  
     - [Instructions](#instructions)  
@@ -14,6 +17,7 @@
 4. [Files and Directory Structure](#files-and-directory-structure)  
 5. [Expected Results](#expected-results)  
 6. [Final Analysis](#final-analysis)  
+
 
 ## Introduction  
 You've just joined Pymaceuticals, Inc., a new pharmaceutical company that  
@@ -31,6 +35,9 @@ The executive team has tasked you with generating all of the tables and figures 
 for the technical report of the clinical study. They have also asked you for a top-level  
 summary of the study results.  
 
+[:arrow_up: Return to TOC](#table-of-contents)  
+
+
 ## Challenge Overview  
 This assignment is broken down into the following tasks:  
 - Prepare the data.  
@@ -41,14 +48,89 @@ This assignment is broken down into the following tasks:
 - Calculate correlation and regression.  
 - Submit final analysis.  
 
+[:arrow_up: Return to TOC](#table-of-contents)  
+
+
+## Variables/Breakdowns  
+### Relevant Variables:  
+```
+- mouseData  
+    - Mouse ID  
+    - Drug Regimen  
+    - Sex  
+    - Weight (g)
+- studyData  
+    - Mouse ID  
+    - Timepoint  
+    - Tumor Volume (mm3)  
+```  
+### Summary Breakdowns:  
+- [Loading Station & Data Cleanup](main.ipynb/#loading-station--data-cleanup)  
+- [Summary Statistics]()  
+- [Bar and Pie Charts]()  
+- [Quartiles, Outliers and Boxplots]()  
+- [Line and Scatter Plots]()  
+- [Correlation and Regression]()  
 
 ## Setup and Usage  
+### Prerequisites  
+- Python 3.x  
+- Standard libraries: `pathlib`, `random` (included with Python)  
+- Non-standard library: `pandas`, `matplotlib`, `scipy`  
+- IDE that supports Jupyter Notebooks with Python  
+
+[:arrow_up: Return to TOC](#table-of-contents)  
+
+### Instructions  
+1. Clone this repository.  
+2. Ensure IDE is up to date and running.  
+3. Ensure the two input CSV files are in the `data` sub-folder.  
+4. Open `main.ipynb` in your IDE and run all cells.  
+5. If the necessary dependencies aren't found install using the following methods:  
+    - For *pip*  
+        ```  
+        pip install pathlib  
+        pip install random  
+        pip install pandas  
+        pip install matplotlib  
+        pip install scipy  
+        ```  
+    - For *anaconda*  
+        ```  
+        conda install pandas  
+        conda install matplotlib  
+        conda install scipy  
+        ```  
+> [!WARNING]  
+> Please note that neither *pathlib* nor *random* was installed using conda  
+> *pathlib* and *random* are base modules almost always included with Python  
+> installations. It is recommended to use `pip install` for these two modules.  
+6. Results will print throughout the Jupyter Interactive Notebook  
+<!-- 7. Results are then exported in .png format in new `snapshots` directory   -->
+
+[:arrow_up: Return to TOC](#table-of-contents)  
 
 
-## Files and Directory Structure
+### Limitations  
 
 
-## Expected Results
+[:arrow_up: Return to TOC](#table-of-contents)  
 
 
-## Final Analysis
+## Files and Directory Structure  
+
+
+[:arrow_up: Return to TOC](#table-of-contents)  
+
+## Expected Results  
+
+> [!TIP]  
+> Collapsing of various regions or use of `OUTLINE` in VSCode can  
+> speed up exploration of the Notebook.  
+
+[:arrow_up: Return to TOC](#table-of-contents)  
+
+## Final Analysis  
+
+
+[:arrow_up: Return to TOC](#table-of-contents)  
