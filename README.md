@@ -113,7 +113,7 @@ This assignment is broken down into the following tasks:
 > Please note that neither *pathlib* nor *random* was installed using conda  
 > *pathlib* and *random* are base modules almost always included with Python  
 > installations. It is recommended to use `pip install` for these two modules.  
-6. Results will print throughout the Jupyter Interactive Notebook  
+6. **Results will print throughout the Jupyter Interactive Notebook**  
 <!-- 7. Results are then exported in .png format in new `snapshots` directory   -->
 
 [:arrow_up: Return to TOC](#table-of-contents)  
@@ -133,7 +133,8 @@ matplotlib-challenge/
 |   |— data/
 |   |   — Mouse_metadata.csv
 |   |   - Study_results.csv
-|   |— main.ipynb
+|   |— main.ipynb  
+|   |- README.md
 ```  
 This structure ensures all inputs are organized within their respective folders.  
 
