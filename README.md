@@ -20,7 +20,7 @@
 
 
 ## Introduction  
-*Roleplay:*  
+*Roleplay...*  
 You've just joined Pymaceuticals, Inc., a new pharmaceutical company that  
 specializes in anti-cancer medications. Recently, it began screening for potential  
 treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.  
@@ -62,21 +62,24 @@ environment. Python version used is `3.12.7` running with imported dependencies 
 and Study_results.csv were imported and read into two Pandas DataFrame objects.  
 The two frames were checked for holes in their data types (NaN). After merging the two  
 DFs on their column axis by the unique ID of the mice involved in the study, another  
-scan over the newly merged DF was done but this time to check for any duplicate information  
-found under data identifiers.  
+scan over the newly merged DF was done but this time to check for any duplicate  
+information found under data identifiers.  
 
-The identifying labels for each data point consists of a mouse ID and the timepoint the data  
-was measured at (days since study started for mouse). Each mouse ID's timepoints must be  
-unique to that ID. For any ID found with duplicate timepoints, all data associated with said  
-ID must be removed to ensure data integrity.  
+The identifying labels for each datapoint consists of a mouse ID and the timepoint the  
+data was measured at (days since study started for mouse). Each mouse ID's timepoints  
+must be unique to that ID. For any ID found with duplicate timepoints, all data  
+associated with said ID must be removed to ensure data integrity.  
 
-> [!NOTE]
-> In the case of a majority duplicates, a different course of action would be taken to  
-> maintain a usable amount of data points, however only one mouse ID was found and thusly  
-> removed from the set.  
+> [!NOTE]  
+> In the case of a majority duplicates, a different course of action would be taken  
+> to maintain a usable amount of datapoints, however only one mouse ID was found and  
+> thusly removed from the set.  
 
-
-
+After cleaning has been completed, the study's data has been combined with its  
+corresponding mouse ID to give access to the mouse's data at every datapoint. Summary  
+statistics of tumor by drug treatment is calculated, graphs visualizing the usage of  
+each drug in the study and distribution of mice by gender are rendered, and then  
+outliers are found quantitatively and qualitatively. Last of all, 
 
 
 [:arrow_up: Return to TOC](#table-of-contents)  
@@ -94,7 +97,8 @@ ID must be removed to ensure data integrity.
     - Mouse ID  
     - Timepoint  
     - Tumor Volume (mm3)  
-- Data point identifiers  
+
+- Datapoint identifiers  
     - Mouse ID  
         -Timepoints  
 ```  
