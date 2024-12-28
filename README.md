@@ -20,6 +20,7 @@
 
 
 ## Introduction  
+*Roleplay:*  
 You've just joined Pymaceuticals, Inc., a new pharmaceutical company that  
 specializes in anti-cancer medications. Recently, it began screening for potential  
 treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.  
@@ -48,6 +49,36 @@ This assignment is broken down into the following tasks:
 - Calculate correlation and regression.  
 - Submit final analysis.  
 
+The Pymaceuticals .ipynb is a Python-interactive Jupyter notebook that takes raw data  
+from a test study of mice with tumors, transforms it into usable information, and  
+creates graphical presentations of different variables and their relationships. The  
+exact process consists of extracting raw data, combining data together for usability  
+and portability, cleaning our merged data, and then using it to create palpable  
+summaries and charts detailing the effectiveness of different drug regiments.  
+
+Pymaceuticals was developed and currently runs on a conda based local python  
+environment. Python version used is `3.12.7` running with imported dependencies of  
+`pathlib`, `random`, `pandas`, `matplotlib`, and `scipy`. The files Mouse_metadata.csv  
+and Study_results.csv were imported and read into two Pandas DataFrame objects.  
+The two frames were checked for holes in their data types (NaN). After merging the two  
+DFs on their column axis by the unique ID of the mice involved in the study, another  
+scan over the newly merged DF was done but this time to check for any duplicate information  
+found under data identifiers.  
+
+The identifying labels for each data point consists of a mouse ID and the timepoint the data  
+was measured at (days since study started for mouse). Each mouse ID's timepoints must be  
+unique to that ID. For any ID found with duplicate timepoints, all data associated with said  
+ID must be removed to ensure data integrity.  
+
+> [!NOTE]
+> In the case of a majority duplicates, a different course of action would be taken to  
+> maintain a usable amount of data points, however only one mouse ID was found and thusly  
+> removed from the set.  
+
+
+
+
+
 [:arrow_up: Return to TOC](#table-of-contents)  
 
 
@@ -58,11 +89,14 @@ This assignment is broken down into the following tasks:
     - Mouse ID  
     - Drug Regimen  
     - Sex  
-    - Weight (g)
+    - Weight (g)  
 - Study Data  
     - Mouse ID  
     - Timepoint  
     - Tumor Volume (mm3)  
+- Data point identifiers  
+    - Mouse ID  
+        -Timepoints  
 ```  
 [:arrow_up: Return to TOC](#table-of-contents)  
 
@@ -120,7 +154,9 @@ This assignment is broken down into the following tasks:
 
 
 ### Limitations  
-
+- [ ] Results are qualitative not quantitative  
+- [ ] Exported images lack complete titling for easy comprehension in any space  
+- [ ] Time frame for DataFrame is a static moment instead of a dynamic range  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
@@ -140,6 +176,8 @@ This structure ensures all inputs are organized within their respective folders.
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
+
+
 ## Expected Results  
 
 > [!TIP]  
@@ -147,6 +185,8 @@ This structure ensures all inputs are organized within their respective folders.
 > speed up exploration of the Notebook.  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
+
+
 
 ## Final Analysis  
 
