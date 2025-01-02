@@ -158,7 +158,7 @@ outliers are found quantitatively and qualitatively. Last of all,
 
 
 ### Limitations  
-- [ ] Results are qualitative not quantitative  
+- [ ] Graphed results are qualitative not quantitative  
 - [ ] Exported images lack complete titling for easy comprehension in any space  
 - [ ] Time frame for DataFrame is a static moment instead of a dynamic range  
 
@@ -202,7 +202,7 @@ in the Jupyter Notebook:
 ![Pie Chart for the gender distribution of mice](Expected_Graphs/mouse_perGender.png)  
   
 3. This boxplot displays the inner and outer quartile ranges of the top 4 performing drug regimens in the study.  
-![Boxplot chart for quartiles and outliers of the top 4 performing drug regimens](Expected_Graphs/outliers_topDrugs.png)
+![Boxplot chart for quartiles and outliers of the top 4 performing drug regimens](Expected_Graphs/outliers_topDrugs.png)  
   
 4. This line graph is randomly generated each time the code is run, as the challenge called for 'a mouse', and not a specific or consistent one throughout.  
 The line graph is for the volume of its tumor over its timepoints in the study.  
@@ -211,7 +211,7 @@ The line graph is for the volume of its tumor over its timepoints in the study.
 5. This scatter plot is for the purposes of displaying a single mouse's average tumor size vs the weight of that same mouse.  
 ![Scatter plot chart for the average volume of a tumor vs the weight of the mouse that had that average tumor size](Expected_Graphs/weight_avgTumor.png)  
   
-6. The chart uses the previous scatter plot but layers a linear regression drawn line on top of it, along with an annotation for the equation of that line.
+6. The chart uses the previous scatter plot but layers a linear regression drawn line on top of it, along with an annotation for the equation of that line.  
 ![Linear regression and line equation annotations added on-top of previous scatter plot](Expected_Graphs/weight_avgTumor_regress.png)  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
@@ -219,6 +219,18 @@ The line graph is for the volume of its tumor over its timepoints in the study.
 
 
 ## Final Analysis  
+While the study was held for the purpose figuring out which drug regimen was  
+the most successful in treating squamous cell carcinoma (SCC), it also shed a  
+light on how mice in general react to anti-cancer drugs and solutions. Distributions  
+within different groupings are largely similar enough to compare and of a big  
+enough size to analyze in the first place.  
+
+Finding the highest performing treatments signals a few things:  
+    1. The lowest tumor size mean of a drug regimen
+    2. Smaller median value for tumor size by drug
+    3. Lower standard deviation in tumor size
+
+
 
 
 [:arrow_up: Return to TOC](#table-of-contents)  
