@@ -195,12 +195,24 @@ a Jupyter Notebook traversal suggestion.
 The following are examples of the expected results from the matplotlib code running  
 in the Jupyter Notebook:
 
-![Bar Chart for the number of Timepoints for each drug regimen](Expected_Graphs/Obs_perDrug.png)
-![Pie Chart for the gender distribution of mice](Expected_Graphs/mouse_perGender.png)
+1. This Bar Chart shows the number of timepoints contained in ecah drug regimen (aka number of total doses).  
+![Bar Chart for the number of Timepoints for each drug regimen](Expected_Graphs/Obs_perDrug.png)  
+  
+2. This pie chart depicts the percent of whole gender distribution of the mice in this experiment.  
+![Pie Chart for the gender distribution of mice](Expected_Graphs/mouse_perGender.png)  
+  
+3. This boxplot displays the inner and outer quartile ranges of the top 4 performing drug regimens in the study.  
 ![Boxplot chart for quartiles and outliers of the top 4 performing drug regimens](Expected_Graphs/outliers_topDrugs.png)
-![Random line graph for the tumor volume of a random mouse over its timepoints (Not indicative of what will actually be produced because mouse selection is randomized)](Expected_Graphs/random_mouse_tumor.png)
-![Scatter plot chart for the average volume of a tumor vs the weight of the mouse that had that average tumor size](Expected_Graphs/weight_avgTumor.png)
-![Linear regression and line equation annotations added on-top of previous scatter plot](Expected_Graphs/weight_avgTumor_regress.png)
+  
+4. This line graph is randomly generated each time the code is run, as the challenge called for 'a mouse', and not a specific or consistent one throughout.  
+The line graph is for the volume of its tumor over its timepoints in the study.  
+![Random line graph for the tumor volume of a random mouse over its timepoints (Not indicative of what will actually be produced because mouse selection is randomized)](Expected_Graphs/random_mouse_tumor.png)  
+  
+5. This scatter plot is for the purposes of displaying a single mouse's average tumor size vs the weight of that same mouse.  
+![Scatter plot chart for the average volume of a tumor vs the weight of the mouse that had that average tumor size](Expected_Graphs/weight_avgTumor.png)  
+  
+6. The chart uses the previous scatter plot but layers a linear regression drawn line on top of it, along with an annotation for the equation of that line.
+![Linear regression and line equation annotations added on-top of previous scatter plot](Expected_Graphs/weight_avgTumor_regress.png)  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
