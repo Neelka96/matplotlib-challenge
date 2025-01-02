@@ -7,9 +7,9 @@
 ## Table of Contents  
 1. [Introduction](#introduction)  
 2. [Challenge Overview](#challenge-overview)  
-3. [Variables/Breakdowns](#variablesbreakdowns)
-    - [Relevant Variables](#relevant-variables)
-    - [Summary Breakdowns](#summary-breakdowns)
+3. [Variables/Breakdowns](#variablesbreakdowns)  
+    - [Relevant Variables](#relevant-variables)  
+    - [Summary Breakdowns](#summary-breakdowns)  
 3. [Setup and Usage](#setup-and-usage)  
     - [Prerequisites](#prerequisites)  
     - [Instructions](#instructions)  
@@ -183,10 +183,24 @@ This structure ensures all inputs are organized within their respective folders.
 
 
 ## Expected Results  
+Results from this code are solely for viewing in the Jupyter Notebook. As many  
+dependencies have already been loaded into the code it is needless to add another  
+just to print the graphs outside of the main.ipynb file. Please see the `Tip` for  
+a Jupyter Notebook traversal suggestion.
 
 > [!TIP]  
 > Collapsing of various regions or use of `OUTLINE` in VSCode can  
 > speed up exploration of the Notebook.  
+
+The following are examples of the expected results from the matplotlib code running  
+in the Jupyter Notebook:
+
+![Bar Chart for the number of Timepoints for each drug regimen](Expected_Graphs/Obs_perDrug.png)
+![Pie Chart for the gender distribution of mice](Expected_Graphs/mouse_perGender.png)
+![Boxplot chart for quartiles and outliers of the top 4 performing drug regimens](Expected_Graphs/outliers_topDrugs.png)
+![Random line graph for the tumor volume of a random mouse over its timepoints (Not indicative of what will actually be produced because mouse selection is randomized)](Expected_Graphs/random_mouse_tumor.png)
+![Scatter plot chart for the average volume of a tumor vs the weight of the mouse that had that average tumor size](Expected_Graphs/weight_avgTumor.png)
+![Linear regression and line equation annotations added on-top of previous scatter plot](Expected_Graphs/weight_avgTumor_regress.png)
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
