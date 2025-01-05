@@ -2,7 +2,7 @@
 `Module 5`  
 `EdX(2U) & UT Data Analytics and Visualization Bootcamp`  
 `Cohort UTA-VIRT-DATA-PT-11-2024-U-LOLC`  
-`By Neel Kumar Agarwal`  
+`By Neel Kumar Agarwal @Neelka96`  
 
 ## Table of Contents  
 1. [Introduction](#introduction)  
@@ -17,6 +17,16 @@
 4. [Files and Directory Structure](#files-and-directory-structure)  
 5. [Expected Results](#expected-results)  
 6. [Final Analysis](#final-analysis)  
+
+
+
+> [!NOTE]  
+> Regarding citations...  
+> No citations were needed for the completion of this challenge. "Starter Code" was  
+> given by edX/2U to help guide students partaking in their program in initially  
+> setting up the Jupyter Notebook. Other than that, all Source Code found in the  
+> Notebook and in this README.md was written originally by Neel Kumar Agarwal.  
+> (Github Handle: @Neelka96)  
 
 
 
