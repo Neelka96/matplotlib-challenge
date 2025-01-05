@@ -19,6 +19,7 @@
 6. [Final Analysis](#final-analysis)  
 
 
+
 ## Introduction  
 *Roleplay...*  
 You've just joined Pymaceuticals, Inc., a new pharmaceutical company that  
@@ -37,6 +38,7 @@ for the technical report of the clinical study. They have also asked you for a t
 summary of the study results.  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
+
 
 
 ## Challenge Overview  
@@ -85,6 +87,7 @@ outliers are found quantitatively and qualitatively. Last of all,
 [:arrow_up: Return to TOC](#table-of-contents)  
 
 
+
 ## Variables/Breakdowns  
 ### Relevant Variables:  
 ```
@@ -104,6 +107,8 @@ outliers are found quantitatively and qualitatively. Last of all,
 ```  
 [:arrow_up: Return to TOC](#table-of-contents)  
 
+
+
 ### Summary Breakdowns:  
 - Loading Station & Data Cleanup  
     - Setup for Imports, CSVs, and DataFrames  
@@ -118,6 +123,8 @@ outliers are found quantitatively and qualitatively. Last of all,
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
+
+
 ## Setup and Usage  
 ### Prerequisites  
 - Python 3.x  
@@ -126,6 +133,8 @@ outliers are found quantitatively and qualitatively. Last of all,
 - IDE that supports Jupyter Notebooks with Python  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
+
+
 
 ### Instructions  
 1. Clone this repository.  
@@ -157,12 +166,14 @@ outliers are found quantitatively and qualitatively. Last of all,
 [:arrow_up: Return to TOC](#table-of-contents)  
 
 
+
 ### Limitations  
 - [ ] Graphed results are qualitative not quantitative  
 - [ ] Exported images lack complete titling for easy comprehension in any space  
 - [ ] Time frame for DataFrame is a static moment instead of a dynamic range  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
+
 
 
 ## Files and Directory Structure  
@@ -196,23 +207,23 @@ The following are examples of the expected results from the matplotlib code runn
 in the Jupyter Notebook:
 
 1. This Bar Chart shows the number of timepoints contained in ecah drug regimen (aka number of total doses).  
-![Bar Chart for the number of Timepoints for each drug regimen](Expected_Graphs/Obs_perDrug.png)  
+![Bar Chart for the number of Timepoints for each drug regimen](docs/figures/Obs_perDrug.png)  
   
 2. This pie chart depicts the percent of whole gender distribution of the mice in this experiment.  
-![Pie Chart for the gender distribution of mice](Expected_Graphs/mouse_perGender.png)  
+![Pie Chart for the gender distribution of mice](docs/figures/mouse_perGender.png)  
   
 3. This boxplot displays the inner and outer quartile ranges of the top 4 performing drug regimens in the study.  
-![Boxplot chart for quartiles and outliers of the top 4 performing drug regimens](Expected_Graphs/outliers_topDrugs.png)  
+![Boxplot chart for quartiles and outliers of the top 4 performing drug regimens](docs/figures/outliers_topDrugs.png)  
   
 4. This line graph is randomly generated each time the code is run, as the challenge called for 'a mouse', and not a specific or consistent one throughout.  
 The line graph is for the volume of its tumor over its timepoints in the study.  
-![Random line graph for the tumor volume of a random mouse over its timepoints (Not indicative of what will actually be produced because mouse selection is randomized)](Expected_Graphs/random_mouse_tumor.png)  
+![Random line graph for the tumor volume of a random mouse over its timepoints (Not indicative of what will actually be produced because mouse selection is randomized)](docs/figures/random_mouse_tumor.png)  
   
 5. This scatter plot is for the purposes of displaying a single mouse's average tumor size vs the weight of that same mouse.  
-![Scatter plot chart for the average volume of a tumor vs the weight of the mouse that had that average tumor size](Expected_Graphs/weight_avgTumor.png)  
+![Scatter plot chart for the average volume of a tumor vs the weight of the mouse that had that average tumor size](docs/figures/weight_avgTumor.png)  
   
 6. The chart uses the previous scatter plot but layers a linear regression drawn line on top of it, along with an annotation for the equation of that line.  
-![Linear regression and line equation annotations added on-top of previous scatter plot](Expected_Graphs/weight_avgTumor_regress.png)  
+![Linear regression and line equation annotations added on-top of previous scatter plot](docs/figures/weight_avgTumor_regress.png)  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
@@ -226,11 +237,12 @@ within different groupings are largely similar enough to compare and of a big
 enough size to analyze in the first place.  
 
 Finding the highest performing treatments signals a few things:  
-    1. The lowest tumor size mean of a drug regimen
-    2. Smaller median value for tumor size by drug
-    3. Lower standard deviation in tumor size
+    1. The lowest tumor size mean of a drug regimen  
+    2. Smaller median value for tumor size by drug  
+    3. Lower standard deviation in tumor size  
+    4. Final tumor sizes are the smallest  
 
-
-
+The boxplot could be easily expanded to include all drug regimens, but based off  
+the evidence accumulated from the summaries and 
 
 [:arrow_up: Return to TOC](#table-of-contents)  
