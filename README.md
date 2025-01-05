@@ -168,9 +168,8 @@ outliers are found quantitatively and qualitatively. Last of all,
 
 
 ### Limitations  
-- [ ] Graphed results are qualitative not quantitative  
-- [ ] Exported images lack complete titling for easy comprehension in any space  
-- [ ] Time frame for DataFrame is a static moment instead of a dynamic range  
+- [ ] Graphed results are qualitative not quantitative    
+- [ ] Time frame for DataFrames is limited up to 45 days instead of an open dynamic range  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
@@ -243,6 +242,36 @@ Finding the highest performing treatments signals a few things:
     4. Final tumor sizes are the smallest  
 
 The boxplot could be easily expanded to include all drug regimens, but based off  
-the evidence accumulated from the summaries and 
+the evidence accumulated from the summaries and using the following code a cleaner  
+picture is painted as to how well the drugs perform.  
+```
+INPUT:
+mean = clean_df_summary.sort_values('Mean Tumor Volume').iloc[:5, 0].index
+median = clean_df_summary.sort_values('Median Tumor Volume').iloc[:5, 1].index
+variance = clean_df_summary.sort_values('Tumor Volume Variance').iloc[:5, 2].index
+std_dev = clean_df_summary.sort_values('Tumor Volume Std. Dev.').iloc[:5, 3].index
+std_err = clean_df_summary.sort_values('Tumor Volume Std. Err.').iloc[:5, 4].index
+rank = 1
+print('          Mean     Median     Mode    Std Dev   Std Err')
+print('-'*65)
+for a,b,c,d,e in zip(mean, median, variance, std_dev, std_err):
+    print(f'Rank {rank}: {a}, {b}, {c}, {d}, {e}')
+    rank += 1
+
+OUTPUT:
+          Mean     Median     Mode    Std Dev    Std Err
+-----------------------------------------------------------------
+Rank 1: Ramicane, Ramicane, Ramicane, Ramicane, Ramicane
+Rank 2: Capomulin, Capomulin, Capomulin, Capomulin, Capomulin
+Rank 3: Propriva, Propriva, Ceftamin, Ceftamin, Ceftamin
+Rank 4: Ceftamin, Ceftamin, Infubinol, Infubinol, Infubinol
+Rank 5: Infubinol, Zoniferol, Propriva, Propriva, Zoniferol
+```  
+Based off of the summaries the top drugs are Ramicane, Capomulin, Propriva,  
+Ceftamin, and Infubinol. However when viewed in the boxplot form, it has a wider  
+range and margin of error than it's main competitors Ceftamin and Infubinol.  
+Therefore, it makes sense that the boxplot requested was for the augmented top  
+four drugs: Ramicane, Capomulin, Ceftamin, and Infubinol.  
+
 
 [:arrow_up: Return to TOC](#table-of-contents)  
