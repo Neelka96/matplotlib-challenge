@@ -246,32 +246,54 @@ the evidence accumulated from the summaries and using the following code a clean
 picture is painted as to how well the drugs perform.  
 ```
 INPUT:
+
 mean = clean_df_summary.sort_values('Mean Tumor Volume').iloc[:5, 0].index
 median = clean_df_summary.sort_values('Median Tumor Volume').iloc[:5, 1].index
 variance = clean_df_summary.sort_values('Tumor Volume Variance').iloc[:5, 2].index
 std_dev = clean_df_summary.sort_values('Tumor Volume Std. Dev.').iloc[:5, 3].index
 std_err = clean_df_summary.sort_values('Tumor Volume Std. Err.').iloc[:5, 4].index
 rank = 1
-print('          Mean     Median     Mode    Std Dev   Std Err')
+print('          Mean     Median    Variance    Std Dev   Std Err')
 print('-'*65)
 for a,b,c,d,e in zip(mean, median, variance, std_dev, std_err):
     print(f'Rank {rank}: {a}, {b}, {c}, {d}, {e}')
     rank += 1
-
+```
+```
 OUTPUT:
-          Mean     Median     Mode    Std Dev    Std Err
+
+          Mean     Median    Variance    Std Dev    Std Err
 -----------------------------------------------------------------
 Rank 1: Ramicane, Ramicane, Ramicane, Ramicane, Ramicane
 Rank 2: Capomulin, Capomulin, Capomulin, Capomulin, Capomulin
 Rank 3: Propriva, Propriva, Ceftamin, Ceftamin, Ceftamin
 Rank 4: Ceftamin, Ceftamin, Infubinol, Infubinol, Infubinol
 Rank 5: Infubinol, Zoniferol, Propriva, Propriva, Zoniferol
-```  
+```
+The code separates the different columns and isolates the top five drugs  
+for the mean, median, variance, standard deviation, and standard error.  
 Based off of the summaries the top drugs are Ramicane, Capomulin, Propriva,  
 Ceftamin, and Infubinol. However when viewed in the boxplot form, it has a wider  
-range and margin of error than it's main competitors Ceftamin and Infubinol.  
-Therefore, it makes sense that the boxplot requested was for the augmented top  
-four drugs: Ramicane, Capomulin, Ceftamin, and Infubinol.  
+range and margin of error than it's main competitors Ceftamin and Infubinol, and  
+it's among the drugs with the least number of observations. Therefore, it makes  
+sense that the boxplot requested was for the augmented top four drugs: Ramicane,  
+Capomulin, Ceftamin, and Infubinol.  
 
+As part of the analysis, a deeper look at the individual mice who received  
+Capomulin was requested because it's a top contender. In order to tackle this,  
+and because no specific mouse was requested, a random generator for any mouse  
+that was treated with Capomulin was created so that during each runtime a random  
+mouse was selected and graphed according to its timepoints and tumor volume.  
+The randomly graphed mice that were treated with Capomulin almost always appear  
+to have a downwards correlation between timepoints and tumor volume. However,  
+this random generator could be further modulated and switched to a different drug  
+regimen, and when used in examination of random mice that were treated with  
+Ramicane the mice actually seem to outperform the mice that were treated with  
+Capomulin. Further analysis could most certainly be used, especially a longer-term  
+study or maintaining more detailed data sets of the mice in the study along with  
+outcomes or side-affects of different drug regimens. Without said information,  
+it is suffice to say with this data set that Ramicane and Capomulin are the best  
+performing drug regimens for mice to take in countering squamous cell carcinoma  
+(SCC).
 
 [:arrow_up: Return to TOC](#table-of-contents)  
