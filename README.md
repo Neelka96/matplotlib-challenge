@@ -157,11 +157,10 @@ outliers are found quantitatively and qualitatively. Last of all,
         conda install scipy  
         ```  
 > [!WARNING]  
-> Please note that neither *pathlib* nor *random* was installed using conda  
+> Please note that neither *pathlib* nor *random* was installed using conda.  
 > *pathlib* and *random* are base modules almost always included with Python  
 > installations. It is recommended to use `pip install` for these two modules.  
 6. **Results will print throughout the Jupyter Interactive Notebook**  
-<!-- 7. Results are then exported in .png format in new `snapshots` directory   -->
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
